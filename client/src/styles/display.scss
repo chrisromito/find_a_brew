@@ -1,0 +1,82 @@
+
+
+.block { display: block; }
+.inline-block { display: inline-block; }
+
+
+.wrap { flex-wrap: wrap; }
+.nowrap { flex-wrap: nowrap; }
+
+
+.flex {
+    @extend .wrap;
+    display: flex;
+    
+    &.nowrap {
+        @extend .nowrap;
+    }
+}
+
+.i-flex {
+    @extend .wrap;
+    display: inline-flex;
+
+    &.nowrap {
+        @extend .nowrap;
+    }
+}
+
+
+$flex-positions: (('start', 'flex-start'), ('end', 'flex-end'), ('center', 'center'), ('stretch', 'stretch'));
+
+
+@each $position in $flex-positions {
+    $name: nth($position, 1);
+    $prop: nth($position, 2);
+    
+    .flex--align-#{$name} {
+        align-items: #{$prop};
+        align-content: #{$prop};
+    }
+    .flex--justify-#{$name} {
+        justify-items: #{$prop};
+        justify-content: #{$prop};
+    }
+
+    .flex--justify-self-#{$name} {
+        justify-self: #{$prop};
+    }
+
+    .flex--align-self#{$name} {
+        align-self: #{$prop};
+    }
+}
+
+
+
+.position--absolute { position: absolute; }
+.position--relative { position: relative; }
+
+$directions: top bottom left right;
+
+
+@for $n from 0 through 50 {
+    $val: $n * 2;
+    $npx: #{$val}px;
+
+    @each $direction in $directions {
+        // .top--4 { top: 4px; }
+        // .left--98 { left: 98px; }
+        .#{$direction}--#{$val} {
+            $direction: $npx;
+        }
+    }
+}
+
+
+@each $direction in $directions {
+    // .top--initial { top: initial; }
+    .#{$direction}--initial {
+        $direction: initial;
+    }
+}

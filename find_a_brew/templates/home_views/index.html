@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
+
+</head>
+<body class="mdc-typography mdc-typography--body1 mdc-theme--background" style="margin: 0;">
+    <div class="main-content">
+        {# Toolbar #}
+        <div class="width--100 i-flex">
+            <header class="mdc-top-app-bar mdc-top-app-bar--dense mdc-elevation--z5" style="top: 0px;">
+                <div class="mdc-top-app-bar__row background--background text--text">
+                    <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                        <button
+                            class="material-icons mdc-top-app-bar__navigation-icon mdc-ripple-upgraded--unbounded mdc-ripple-upgraded">menu</button>
+                        <span class="mdc-top-app-bar__title"><i class="mdi mdi-beer"></i>Find A Brew</span>
+                    </section>
+                    <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end">
+                        <button
+                            class="material-icons mdc-top-app-bar__action-item mdc-ripple-upgraded--unbounded mdc-ripple-upgraded"
+                            aria-label="Download">file_download</button>
+                        <button
+                            class="material-icons mdc-top-app-bar__action-item mdc-ripple-upgraded--unbounded mdc-ripple-upgraded"
+                            aria-label="Print this page">print</button>
+                        <button
+                            class="material-icons mdc-top-app-bar__action-item mdc-ripple-upgraded--unbounded mdc-ripple-upgraded"
+                            aria-label="Bookmark this page">bookmark</button>
+                    </section>
+                </div>
+            </header>
+        </div>
+
+        {# App #}
+        <div class="mdc-top-app-bar--dense-fixed-adjust app--container width--100 block margin--auto">
+                <div id="app"></div>
+        </div>
+    </div>
+
+    {% block scripts %}
+
+    {% endblock %}
+    <script src="{{ url_for('static', filename='app.bundle.js') }}"></script>
+    {# Load icons last due to weight of payload & unpredictable nature of CDNs #}
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.materialdesignicons.com/2.8.94/css/materialdesignicons.min.css" rel="stylesheet">
+</body>
+
+</html>

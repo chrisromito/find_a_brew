@@ -1,0 +1,76 @@
+$directions: top bottom left right;
+
+@for $n from 0 through 50 {
+    $val: $n * 5;
+    $dimension: percentage($val);
+    $npx: #{$n}px;
+
+    .width--#{$n} {
+        width: $dimension;
+        max-width: $dimension;
+    }
+
+    .height--#{$n} {
+        height: $dimension;
+        max-height: $dimension;
+    }
+
+    //-- Padding
+    .padding--#{$n} {
+        padding: $npx;
+    }
+
+    .padding--v-#{$n} {
+        padding-top: $npx;
+        padding-bottom: $npx;
+    }
+
+    .padding--h-#{$n} {
+        padding-left: $npx;
+        padding-right: $npx;
+    }
+
+    //-- Margin
+    .margin--#{$n} {
+        margin: #{n}px;
+    }
+
+    .margin--v-#{$n} {
+        margin-top: $npx;
+        margin-bottom: $npx;
+    }
+
+    .margin--h-#{$n} {
+        margin-left: $npx;
+        margin-right: $npx;
+    }
+
+
+    @each $direction in $directions {
+        // .padding--right-50 { padding-right: 50px; }
+        .padding--#{$direction}-#{$n} {
+            padding-#{$direction}: $npx;
+        }
+
+        // .margin--left-20 { margin-left: 20px;
+        .margin--#{$direction}-#{$n} {
+            margin-#{$direction}: $npx;
+        }
+    }
+}
+
+
+
+.margin--auto {
+    margin: auto;
+}
+
+.margin--v-auto {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.margin--h-auto {
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -1,0 +1,65 @@
+$primary: #ece8da;
+$secondary: #d13939;
+$accent: #f2cd30;
+$text: #ece8da;
+$background: #333;
+
+$mdc-theme-primary: $primary;
+$mdc-theme-secondary: $secondary;
+$mdc-theme-on-primary: $text;
+$mdc-theme-on-secondary: $text;
+$mdc-theme-background: rgb(245, 245, 245);
+$mdc-theme-surface: lighten($background, 75%);
+
+
+@function lighter($color) {
+    @return lighten($color, 10%);
+}
+
+
+@function darker($color) {
+    @return darken($color, 10%);
+}
+
+//-- Background Helper classes
+$colors_: (
+    ('primary', $primary),
+    ('secondary', $secondary),
+    ('accent', $accent),
+    ('text', $text),
+    ('background', $background),
+    ('surface', $mdc-theme-surface)
+);
+
+
+@each $colorTup in $colors_ {
+    $name: nth($colorTup, 1);
+    $val: nth($colorTup, 2);
+
+    //-- Background
+    .background--#{$name} {
+        background: $val;
+    }
+
+    .background--#{$name}-lighter {
+        background: lighter($val);
+    }
+
+    .background--#{$name}-darker {
+        background: darker($val);
+    }
+
+    //-- Text
+    .text--#{$name} {
+        color: $val;
+    }
+
+    .text--#{$name}-lighter {
+        color: lighter($val);
+    }
+
+    .text--#{$name}-darker {
+        color: darker($val);
+    }
+
+}
