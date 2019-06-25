@@ -49,7 +49,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Search_Input__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/Search/Input */ "./src/components/Search/Input/index.js");
 /* harmony import */ var _components_Search_City__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/Search/City */ "./src/components/Search/City/index.js");
 /* harmony import */ var _components_Brewery_List__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/Brewery/List */ "./src/components/Brewery/List/index.js");
+/* harmony import */ var _components_Search__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/Search */ "./src/components/Search/index.js");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; var ownKeys = Object.keys(source); if (typeof Object.getOwnPropertySymbols === 'function') { ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) { return Object.getOwnPropertyDescriptor(source, sym).enumerable; })); } ownKeys.forEach(function (key) { _defineProperty(target, key, source[key]); }); } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -74,31 +79,65 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
+
 var App =
 /*#__PURE__*/
 function (_Component) {
   _inherits(App, _Component);
 
   function App() {
+    var _getPrototypeOf2;
+
+    var _this;
+
     _classCallCheck(this, App);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(App).apply(this, arguments));
+    for (var _len = arguments.length, props = new Array(_len), _key = 0; _key < _len; _key++) {
+      props[_key] = arguments[_key];
+    }
+
+    _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(App)).call.apply(_getPrototypeOf2, [this].concat(props)));
+    _this.state = {
+      loading: false,
+      breweries: []
+    };
+    return _this;
   }
 
   _createClass(App, [{
     key: "render",
     value: function render() {
+      var _this2 = this;
+
       return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "width--100 flex flex--align-start background--background text--text padding--top-20 mdc-elevation--z2"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_react_layout_grid__WEBPACK_IMPORTED_MODULE_2__["Grid"], {
-        align: "left"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_react_layout_grid__WEBPACK_IMPORTED_MODULE_2__["Row"], null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_react_layout_grid__WEBPACK_IMPORTED_MODULE_2__["Cell"], {
-        columns: 3
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Search_Input__WEBPACK_IMPORTED_MODULE_4__["SearchInput"], null)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_react_layout_grid__WEBPACK_IMPORTED_MODULE_2__["Cell"], {
-        columns: 3
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Search_City__WEBPACK_IMPORTED_MODULE_5__["CityInput"], null))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Search__WEBPACK_IMPORTED_MODULE_7__["SearchComponent"], {
+        props: _objectSpread({}, this.state),
+        onLoadChange: function onLoadChange(loading) {
+          return _this2.onLoadChange(loading);
+        },
+        onBreweriesLoad: function onBreweriesLoad(breweries) {
+          return _this2.onBreweriesLoad(breweries);
+        }
+      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "width--100 flex flex--align-start flex--justify-start mdc-theme--surface"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Brewery_List__WEBPACK_IMPORTED_MODULE_6__["BreweryList"], null)));
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Brewery_List__WEBPACK_IMPORTED_MODULE_6__["BreweryList"], {
+        breweries: this.state.breweries
+      })));
+    }
+  }, {
+    key: "onBreweriesLoad",
+    value: function onBreweriesLoad(breweries) {
+      return this.setState({
+        breweries: breweries
+      });
+    }
+  }, {
+    key: "onLoadChange",
+    value: function onLoadChange(loading) {
+      return this.setState({
+        loading: loading
+      });
     }
   }]);
 
@@ -338,13 +377,15 @@ function (_Component) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CityInput", function() { return CityInput; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _material_react_text_field_index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material/react-text-field/index.scss */ "./node_modules/@material/react-text-field/index.scss");
-/* harmony import */ var _material_react_text_field_index_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_material_react_text_field_index_scss__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _material_react_text_field__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material/react-text-field */ "./node_modules/@material/react-text-field/dist/index.js");
-/* harmony import */ var _material_react_text_field__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_react_text_field__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _AutoComplete__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./AutoComplete */ "./src/components/Search/City/AutoComplete.js");
+/* harmony import */ var ramda__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ramda */ "./node_modules/ramda/es/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _material_react_text_field_index_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material/react-text-field/index.scss */ "./node_modules/@material/react-text-field/index.scss");
+/* harmony import */ var _material_react_text_field_index_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_react_text_field_index_scss__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _material_react_text_field__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material/react-text-field */ "./node_modules/@material/react-text-field/dist/index.js");
+/* harmony import */ var _material_react_text_field__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_react_text_field__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../utils */ "./src/components/utils.js");
+/* harmony import */ var _AutoComplete__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./AutoComplete */ "./src/components/Search/City/AutoComplete.js");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -363,24 +404,35 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
+// import * as R from 'ramda'
 
 
 
- // import './index.scss';C
+
+
 
 var CityInput =
 /*#__PURE__*/
 function (_Component) {
   _inherits(CityInput, _Component);
 
-  function CityInput(props) {
+  function CityInput() {
+    var _getPrototypeOf2;
+
     var _this;
 
     _classCallCheck(this, CityInput);
 
-    _this = _possibleConstructorReturn(this, _getPrototypeOf(CityInput).call(this, props));
+    for (var _len = arguments.length, props = new Array(_len), _key = 0; _key < _len; _key++) {
+      props[_key] = arguments[_key];
+    }
+
+    _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(CityInput)).call.apply(_getPrototypeOf2, [this].concat(props)));
     _this.state = {
-      value: ''
+      loading: false,
+      cities: [],
+      query: '',
+      selectedCity: null
     };
     return _this;
   }
@@ -390,22 +442,78 @@ function (_Component) {
     value: function render() {
       var _this2 = this;
 
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_text_field__WEBPACK_IMPORTED_MODULE_2___default.a, {
+      var fetchCities = Object(_utils__WEBPACK_IMPORTED_MODULE_4__["debounce"])(function (e) {
+        return _this2.onCitySearch(e);
+      }, 20);
+      var onCitySearch = Object(ramda__WEBPACK_IMPORTED_MODULE_0__["pipe"])(Object(ramda__WEBPACK_IMPORTED_MODULE_0__["tap"])(function (query) {
+        return _this2.setState({
+          query: query
+        });
+      }), Object(ramda__WEBPACK_IMPORTED_MODULE_0__["tap"])(fetchCities));
+
+      var handleCitySelect = function handleCitySelect(selectedCity) {
+        return _this2.handleCitySelect(selectedCity);
+      };
+
+      var value = this.state.query ? this.state.query : '';
+      return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_react_text_field__WEBPACK_IMPORTED_MODULE_3___default.a, {
         label: "Location",
-        helperText: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_text_field__WEBPACK_IMPORTED_MODULE_2__["HelperText"], null, "Enter a City, State, and/or Zip Code")
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_text_field__WEBPACK_IMPORTED_MODULE_2__["Input"], {
-        value: this.state.value,
+        helperText: react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_react_text_field__WEBPACK_IMPORTED_MODULE_3__["HelperText"], null, "Enter a City, State, and/or Zip Code")
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_react_text_field__WEBPACK_IMPORTED_MODULE_3__["Input"], {
+        value: value,
         onChange: function onChange(e) {
-          return _this2.setState({
-            value: e.currentTarget.value
-          });
+          return onCitySearch(e.target.value);
         }
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_AutoComplete__WEBPACK_IMPORTED_MODULE_3__["AutoComplete"], null));
+      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_AutoComplete__WEBPACK_IMPORTED_MODULE_5__["AutoComplete"], {
+        cities: this.state.cities,
+        onCitySelect: handleCitySelect
+      }));
+    }
+  }, {
+    key: "onCitySearch",
+    value: function onCitySearch(query) {
+      var _this3 = this;
+
+      console.log('CityInput.onCitySearch()');
+      console.log(query);
+      window._searchQuery = query;
+      console.log(query);
+
+      if (query.length < 2) {
+        return query;
+      } // Set the state
+
+
+      this.setState({
+        query: query,
+        loading: true
+      }); // Fetch the cities
+
+      return fetch("/api/cities/?q=".concat(query)).then(function (cities) {
+        return cities.json();
+      }).then(Object(ramda__WEBPACK_IMPORTED_MODULE_0__["sortBy"])(Object(ramda__WEBPACK_IMPORTED_MODULE_0__["prop"])('city_ascii'))).then(function (cities) {
+        return _this3.setState({
+          cities: cities
+        });
+      })["catch"](function (err) {
+        console.error(err);
+        alert("\n                    Encountered an error while attempting to fetch cities.\n                    Error: ".concat(err, "\n                "));
+        return Promise.reject(err);
+      });
+    }
+  }, {
+    key: "handleCitySelect",
+    value: function handleCitySelect(selectedCity) {
+      this.setState({
+        selectedCity: selectedCity
+      });
+      this.props.onCitySelect(selectedCity);
+      return selectedCity;
     }
   }]);
 
   return CityInput;
-}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+}(react__WEBPACK_IMPORTED_MODULE_1__["Component"]);
 /* harmony default export */ __webpack_exports__["default"] = (CityInput);
 
 /***/ }),
@@ -426,6 +534,49 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_react_text_field_index_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_material_react_text_field_index_scss__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _material_react_text_field__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material/react-text-field */ "./node_modules/@material/react-text-field/dist/index.js");
 /* harmony import */ var _material_react_text_field__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_react_text_field__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../utils */ "./src/components/utils.js");
+
+
+
+
+
+var handleSearch = function handleSearch(onSearch) {
+  return Object(_utils__WEBPACK_IMPORTED_MODULE_3__["debounce"])(onSearch, 100);
+};
+
+var SearchInput = function SearchInput(_ref) {
+  var onSearch = _ref.onSearch,
+      search = _ref.search;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "text--text"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_text_field__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    label: "Search",
+    helperText: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_text_field__WEBPACK_IMPORTED_MODULE_2__["HelperText"], null, "Enter the name of the Brewery You're Looking For")
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_text_field__WEBPACK_IMPORTED_MODULE_2__["Input"], {
+    value: search,
+    onChange: handleSearch(onSearch)
+  })));
+};
+/* harmony default export */ __webpack_exports__["default"] = (SearchInput);
+
+/***/ }),
+
+/***/ "./src/components/Search/index.js":
+/*!****************************************!*\
+  !*** ./src/components/Search/index.js ***!
+  \****************************************/
+/*! exports provided: SearchComponent, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SearchComponent", function() { return SearchComponent; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _material_react_layout_grid__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material/react-layout-grid */ "./node_modules/@material/react-layout-grid/dist/index.js");
+/* harmony import */ var _material_react_layout_grid__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_material_react_layout_grid__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _City__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./City */ "./src/components/Search/City/index.js");
+/* harmony import */ var _Input__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Input */ "./src/components/Search/Input/index.js");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -446,47 +597,214 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
- // import './index.scss';C
 
-var SearchInput =
+
+var SearchComponent =
 /*#__PURE__*/
 function (_Component) {
-  _inherits(SearchInput, _Component);
+  _inherits(SearchComponent, _Component);
 
-  function SearchInput(props) {
+  function SearchComponent() {
+    var _getPrototypeOf2;
+
     var _this;
 
-    _classCallCheck(this, SearchInput);
+    _classCallCheck(this, SearchComponent);
 
-    _this = _possibleConstructorReturn(this, _getPrototypeOf(SearchInput).call(this, props));
+    for (var _len = arguments.length, props = new Array(_len), _key = 0; _key < _len; _key++) {
+      props[_key] = arguments[_key];
+    }
+
+    _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(SearchComponent)).call.apply(_getPrototypeOf2, [this].concat(props)));
     _this.state = {
-      value: ''
+      loading: false,
+      search: _this.props.search,
+      selectedCity: {}
     };
     return _this;
   }
 
-  _createClass(SearchInput, [{
+  _createClass(SearchComponent, [{
     key: "render",
     value: function render() {
       var _this2 = this;
 
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_text_field__WEBPACK_IMPORTED_MODULE_2___default.a, {
-        label: "Search",
-        helperText: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_text_field__WEBPACK_IMPORTED_MODULE_2__["HelperText"], null, "Enter the name of the Brewery You're Looking For")
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_text_field__WEBPACK_IMPORTED_MODULE_2__["Input"], {
-        value: this.state.value,
-        onChange: function onChange(e) {
-          return _this2.setState({
-            value: e.currentTarget.value
-          });
-        }
-      })));
+      var onCitySelect = function onCitySelect(e) {
+        return _this2.onCitySelect(e.target.value);
+      };
+
+      var onSearch = function onSearch(query) {
+        return _this2.onSearch(query);
+      };
+
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_layout_grid__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
+        align: "left"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_layout_grid__WEBPACK_IMPORTED_MODULE_1__["Row"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_layout_grid__WEBPACK_IMPORTED_MODULE_1__["Cell"], {
+        columns: 3
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Input__WEBPACK_IMPORTED_MODULE_3__["SearchInput"], {
+        onSearch: onSearch
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_layout_grid__WEBPACK_IMPORTED_MODULE_1__["Cell"], {
+        columns: 3
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_City__WEBPACK_IMPORTED_MODULE_2__["CityInput"], {
+        onCitySelect: onCitySelect
+      })))));
+    }
+  }, {
+    key: "onCitySelect",
+    value: function onCitySelect(selectedCity) {
+      console.log('onCitySelect()');
+      console.log(selectedCity);
+      this.setState({
+        selectedCity: selectedCity
+      });
+      return selectedCity;
+    }
+  }, {
+    key: "onSearch",
+    value: function onSearch(query) {
+      console.log('onSearch()');
+      console.log(query);
+      return query;
+    }
+  }, {
+    key: "handleLoadChange",
+    value: function handleLoadChange(loading) {
+      return this.props.onLoadChange(loading);
+    }
+  }, {
+    key: "handleBreweries",
+    value: function handleBreweries(breweries) {
+      return this.props.onBreweriesLoad(breweries);
     }
   }]);
 
-  return SearchInput;
+  return SearchComponent;
 }(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
-/* harmony default export */ __webpack_exports__["default"] = (SearchInput);
+/* harmony default export */ __webpack_exports__["default"] = (SearchComponent);
+
+/***/ }),
+
+/***/ "./src/components/utils.js":
+/*!*********************************!*\
+  !*** ./src/components/utils.js ***!
+  \*********************************/
+/*! exports provided: debounce, throttle, titleCase, kabobCase, camelCase */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "debounce", function() { return debounce; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "throttle", function() { return throttle; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "titleCase", function() { return titleCase; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "kabobCase", function() { return kabobCase; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "camelCase", function() { return camelCase; });
+function debounce(func, delay) {
+  /**
+    * @source https://medium.com/@_jh3y/throttling-and-debouncing-in-javascript-b01cad5c8edf
+    * @example
+    * const myEl = document.querySelector('div')
+    * myEl.addEventListener('click', throttle(
+    *     ()=> console.log('debounce()'),
+    *     1000
+    * )
+    * myEl.click()
+    * myEl.click()
+    * // 1000ms later
+    * ... 'debounce()'
+    */
+  var inDebounce = undefined;
+  return function () {
+    var context = this;
+    var args = arguments;
+    clearTimeout(inDebounce);
+    return inDebounce = setTimeout(function () {
+      return func.apply(context, args);
+    }, delay);
+  };
+}
+function throttle(func, limit) {
+  /**
+   * @source Same as debounce function
+   * @example
+   * const myEl = document.querySelector('div')
+   * myEl.addEventListener('click', throttle(
+   *     ()=> console.log('throttle()'),
+   *     1000
+   * )
+   * myEl.click()
+   * ... 'throttle()'
+   * myEl.click()
+   * // 1000ms later
+   * ... 'throttle()'
+   * 
+   */
+  var inThrottle = false;
+  var lastFunc = undefined;
+  var throttleTimer = undefined;
+  return function () {
+    var context = this;
+    var args = arguments;
+
+    if (inThrottle) {
+      clearTimeout(lastFunc); // noinspection JSValidateTypes
+
+      return lastFunc = setTimeout(function () {
+        func.apply(context, args);
+        return inThrottle = false;
+      }, limit);
+    } else {
+      func.apply(context, args); // noinspection JSValidateTypes
+
+      inThrottle = true; // noinspection JSValidateTypes
+
+      return throttleTimer = setTimeout(function () {
+        return inThrottle = false;
+      }, limit);
+    }
+  };
+}
+/**
+ * @func titleCase
+ * @param {String} str
+ * @returns {String}
+ * @example
+ * titleCase('mY shIfT KeY IS BroKEn')
+ * >>> 'My Shift Key Is Broken'
+ */
+
+var titleCase = function titleCase(str) {
+  return str.replace(/\w\S*/g, function (txt) {
+    return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+  });
+};
+/**
+ * @func kabobCase
+ * @param {String} str
+ * @returns {String}
+ * @example
+ * kabobCase('HelloWorld')
+ * >>> 'Hello-world'
+ */
+
+var kabobCase = function kabobCase(str) {
+  return str.replace(/([A-Z])/g, function ($1) {
+    return "-" + $1.toLowerCase();
+  });
+};
+/**
+ * @func camelCase
+ * @param {String} str
+ * @returns {String}
+ * @example
+ * camelCase('Hello-world')
+ * >>> 'HelloWorld'
+ */
+
+var camelCase = function camelCase(str) {
+  return str.replace(/(\-[a-z])/g, function ($1) {
+    return $1.toUpperCase().replace('-', '');
+  });
+};
 
 /***/ })
 
