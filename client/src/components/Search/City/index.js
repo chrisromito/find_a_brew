@@ -1,4 +1,3 @@
-// import * as R from 'ramda'
 import '@material/react-text-field/index.scss'
 import './index.scss'
 import * as R from 'ramda'

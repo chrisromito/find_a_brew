@@ -3,12 +3,21 @@ import './index.scss'
 import * as R from 'ramda'
 import React, { Component } from 'react'
 import List, { ListItem } from '@material/react-list'
-import { BREWERY_TYPES } from '../constants'
 import { getBreweryTypeIcon } from '../shared'
 
-window.R = R
 
-
+/**
+ * @class BreweryList - Provide a place for brewery search results
+ * to be displayed and interacted with.
+ * 
+ * When the application state indicates that we're loading up
+ * search results, this will display a loading icon/spinner in place
+ * of search results.
+ * 
+ * `BreweryList` also filters breweries by `city name` if a city is currently
+ * selected.
+ * 
+ */
 export class BreweryList extends Component {
     constructor(props) {
         super(props)

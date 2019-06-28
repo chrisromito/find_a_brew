@@ -3,7 +3,6 @@ import './index.scss'
 import * as R from 'ramda'
 import React, { Component } from 'react'
 import Dialog, {
-    DialogTitle,
     DialogContent,
     DialogFooter,
     DialogButton,
@@ -13,14 +12,16 @@ import { getBreweryTypeIcon } from '../shared'
 import { GOOGLE_MAP_KEY } from '../constants'
 
 
+/**
+ * @class BreweryItem - Displays information
+ * about a brewery, its location info, & Google map.
+ */
 export class BreweryItem extends Component {
     constructor(...props) {
         super(...props)
     }
 
     render() {
-        console.log('brewery item rendering')
-        console.log(this.props.selectedBrewery)
         const onClose = ()=> this.handleClose()
         const brewery = this.props.selectedBrewery
         return (
@@ -28,7 +29,6 @@ export class BreweryItem extends Component {
                 {(brewery && this.props.isOpen) &&
                     <Dialog open={this.props.isOpen}
                             onClose={onClose}>
-                        {/* <DialogTitle>{this.props.selectedBrewery.name}</DialogTitle> */}
                         <DialogContent>
                             <h6 className='mdc-typography--headline6'>
                                 {getBreweryTypeIcon(brewery)}
@@ -72,7 +72,11 @@ export class BreweryItem extends Component {
 const getLink = (b)=> encodeURI(`https://www.google.com/maps/dir/${b.name} ${b.street} ${b.city}, ${b.state} ${b.postal_code}`)
 
 
-
+/**
+ * @private
+ * @class BreweryMap - Renders a Google Map + a marker pointing
+ * to the brewery
+ */
 class BreweryMap extends Component {
     constructor(props) {
         super(props)
@@ -83,6 +87,7 @@ class BreweryMap extends Component {
             }
         }
     }
+
     render() {
         const lat = Number(this.props.brewery.latitude)
         const lng = Number(this.props.brewery.longitude)

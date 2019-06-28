@@ -5,6 +5,7 @@ import '@material/react-layout-grid/index.scss';
 import { BreweryComponent } from './components/Brewery'
 import { SearchComponent } from './components/Search'
 
+
 export class App extends Component {
 
     constructor(...props) {
@@ -17,7 +18,6 @@ export class App extends Component {
     }
 
     render() {
-        // const propagateCitySelection = (selectedCity)=> this.setState({ selectedCity })
         return (
             <div>
                 <div className="width--100 flex flex--align-start background--background text--text padding--top-20 mdc-elevation--z2">

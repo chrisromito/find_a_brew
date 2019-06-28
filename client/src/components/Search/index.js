@@ -8,6 +8,16 @@ import { SearchInput } from './Input'
 const BREWERY_API = 'https://api.openbrewerydb.org/breweries'
 
 
+/**
+ * @class SearchComponent - Container component for the
+ * city search input & city picker dropdown.
+ * 
+ * We manage HTTP-level state for the Brewery API search
+ * results here, & push brewery search results up the chain.
+ * This acts as a logic-gate sort of deal, where internal state is contained
+ * and validated before telling other components about the state-change.
+ * 
+ */
 export class SearchComponent extends Component {
     constructor(...props) {
         super(...props)
@@ -36,6 +46,12 @@ export class SearchComponent extends Component {
         )
     }
 
+    /**
+     * @method onCitySelect - Receive a City when a user
+     * selects one of the options in the City picker menu
+     * @param {City} selectedCity
+     * @returns {City}
+     */
     onCitySelect(selectedCity) {
         this.setState({ selectedCity })
         this.props.propagateCitySelection({ selectedCity })
@@ -43,6 +59,9 @@ export class SearchComponent extends Component {
         return selectedCity
     }
 
+    /**
+     * 
+     */
     onSearch(query) {
         if (query.length < 3) {
             return query

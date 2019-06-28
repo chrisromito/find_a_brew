@@ -1,12 +1,19 @@
 import './index.scss'
-import * as R from 'ramda'
 import React, { Component } from 'react'
 import { Cell, Grid, Row } from '@material/react-layout-grid'
 import { BreweryList } from './List'
 import { BreweryItem } from './Item'
 
 
-
+/**
+ * @class BreweryComponent - Container component for
+ * the BreweryList & Brewery Item (detail) components.
+ * It receives the list of breweries from the app-level
+ * & disseminates them to the sub-components, along with some internal state.
+ * 
+ * @see onSelect method, which is used to ensure data consistency across
+ * state representations
+ */
 export class BreweryComponent extends Component {
     constructor(props) {
         super(props)
@@ -37,6 +44,16 @@ export class BreweryComponent extends Component {
         )
     }
 
+    /**
+     * @method onSelect - Handles setting the `selectedBrewery` state and
+     * the `isOpen` state.
+     * Since the modal must be open when something is selected, and closed
+     * when it's deselected, this is used to normalize the state between the two
+     * sub-components
+     * 
+     * @param {(Object|null)} selectedBrewery
+     * @returns {(Object|false)}
+     */
     onSelect(selectedBrewery) {
         if (!selectedBrewery) {
             this.setState({
@@ -45,8 +62,7 @@ export class BreweryComponent extends Component {
             })
             return false
         }
-        console.log('BreweryComponent.onSelect')
-        console.log(selectedBrewery)
+
         this.setState({
             selectedBrewery,
             isOpen: true

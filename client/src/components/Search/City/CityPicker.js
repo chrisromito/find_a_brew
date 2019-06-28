@@ -9,6 +9,11 @@ export const cityDisplayValue = (city)=> `${city.city_ascii}, ${city.state.abbre
 const sortByDisplayValue = sortBy(cityDisplayValue)
 
 
+/**
+ * @class CityPicker - Displays a list of cities in a dropdown-esque
+ * component.  This is used to display the options below the city search input.
+ * Note - We push state back up the chain via the `onCitySelect` prop
+ */
 export class CityPicker extends Component {
     constructor(props) {
         super(props)
