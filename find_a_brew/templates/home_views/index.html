@@ -2,7 +2,6 @@
 
 <head>
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
-
 </head>
 <body class="mdc-typography mdc-typography--body1 mdc-theme--background" style="margin: 0;">
     <div class="main-content">
@@ -39,6 +38,7 @@
     {% block scripts %}
 
     {% endblock %}
+    
     <script src="{{ url_for('static', filename='app.bundle.js') }}"></script>
     {# Load icons last due to weight of payload & unpredictable nature of CDNs #}
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">

@@ -1,3 +1,4 @@
+from pprint import pprint
 from typing import Any, Callable, Dict, List
 from flask import Blueprint, jsonify, request
 from sqlalchemy import or_
@@ -8,44 +9,38 @@ from find_a_brew.db.locations import City, State
 api_views = Blueprint('api_views', __name__, url_prefix='/api')
 
 
-@api_views.route('/cities')
+@api_views.route('/cities/')
 def show():
-    # cities = City.query.options(joinedload(City.state))
-    cities = City.query.join(City.state, aliased=True)
+    cities = City.query.join(City.state)
     search = request.args.get('q', '').strip()
     if len(search):
         search_query = '%' + search + '%'
         cities = cities.filter(
             or_(
                 City.city.ilike(search_query),
-                State.name.ilike(search_query),
-                State.abbreviation.ilike(search_query)
+                City.state.has(State.name.ilike(search_query)),
+                City.state.has(State.abbreviation.ilike(search_query))
             )
         )
     return jsonify(
-        parse_cities(cities.all())
+        serialize_cities(cities.distinct(City.city).limit(100).all())
     )
 
 
-def parse_cities(city_list):
-    parse_predicate = project(['id', 'city', 'city_ascii', 'lat', 'lng', 'zips', 'state'])
-    city_dicts = []
-    for city in city_list:
-        if not isinstance(city, dict):
-            city = city.__dict__
-        city_dicts.append(city)
-    city_dicts = parse_predicate(city_dicts)
-    # Serialize each city's state, return a list of updated copies of each city dictionary
-    parsed_cities = [
-        {**x, **{
-            'state': parse_state(x.get('state', {}))
-        }}
-        for x in city_dicts
-    ]
-    return parsed_cities
+def serialize_cities(city_list):
+    return [serialize_city(x) for x in city_list]
 
 
-def parse_state(state):
+def serialize_city(city):
+    temp = {}
+    keys = ['id', 'city', 'city_ascii', 'lat', 'lng', 'zips']
+    for key in keys:
+        temp[key] = getattr(city, key, None)
+    temp['state'] = serialize_state(city.state)
+    return temp
+
+
+def serialize_state(state):
     predicate = props(['id', 'name', 'abbreviation', 'formatted'])
     target = (
         state if isinstance(state, dict)

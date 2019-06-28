@@ -14,6 +14,20 @@ exports.push([module.i, ".background--primary {\n  background: #ece8da; }\n\n.ba
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./src/components/Brewery/Item/index.scss":
+/*!***********************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--4-1!./node_modules/postcss-loader/src??ref--4-2!./node_modules/sass-loader/lib/loader.js??ref--4-3!./src/components/Brewery/Item/index.scss ***!
+  \***********************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
+// Module
+exports.push([module.i, ".brew--dialog .mdc-dialog__surface {\n  width: 750px;\n  max-width: calc(90vw); }\n\n.marker {\n  width: 40px;\n  height: 40px;\n  position: absolute;\n  left: -20px;\n  top: -20px;\n  border: 5px solid #f44336;\n  border-radius: 50%;\n  background: white;\n  text-align: center;\n  font-size: 1rem;\n  font-weight: bold;\n  padding: 4px; }\n", "",{"version":3,"sources":["index.scss"],"names":[],"mappings":"AAAA;EACE,YAAY;EACZ,qBAAqB,EAAE;;AAEzB;EACE,WAAW;EACX,YAAY;EACZ,kBAAkB;EAClB,WAAW;EACX,UAAU;EACV,yBAAyB;EACzB,kBAAkB;EAClB,iBAAiB;EACjB,kBAAkB;EAClB,eAAe;EACf,iBAAiB;EACjB,YAAY,EAAE","file":"index.scss","sourcesContent":[".brew--dialog .mdc-dialog__surface {\n  width: 750px;\n  max-width: calc(90vw); }\n\n.marker {\n  width: 40px;\n  height: 40px;\n  position: absolute;\n  left: -20px;\n  top: -20px;\n  border: 5px solid #f44336;\n  border-radius: 50%;\n  background: white;\n  text-align: center;\n  font-size: 1rem;\n  font-weight: bold;\n  padding: 4px; }\n"]}]);
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./src/components/Brewery/List/index.scss":
 /*!***********************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js??ref--4-1!./node_modules/postcss-loader/src??ref--4-2!./node_modules/sass-loader/lib/loader.js??ref--4-3!./src/components/Brewery/List/index.scss ***!
@@ -23,7 +37,35 @@ exports.push([module.i, ".background--primary {\n  background: #ece8da; }\n\n.ba
 
 exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
 // Module
-exports.push([module.i, "", "",{"version":3,"sources":[],"names":[],"mappings":"","file":"index.scss"}]);
+exports.push([module.i, ".brew-list .brew-list--item {\n  height: auto; }\n  .brew-list .brew-list--item .mdc-list-item__text {\n    width: 100%;\n    display: -webkit-inline-box;\n    display: inline-flex;\n    padding: 25px 0px; }\n\n.brew-list .brew-list--cell {\n  width: 100%;\n  max-width: 33%;\n  margin: auto 0;\n  padding: 0 15px;\n  overflow-x: hidden;\n  text-overflow: ellipsis;\n  text-align: left; }\n  .brew-list .brew-list--cell.brew-list--type {\n    width: 50px; }\n\n.brew-list .brew-list--text {\n  margin: auto; }\n", "",{"version":3,"sources":["index.scss"],"names":[],"mappings":"AAAA;EACE,YAAY,EAAE;EACd;IACE,WAAW;IACX,2BAAoB;IAApB,oBAAoB;IACpB,iBAAiB,EAAE;;AAEvB;EACE,WAAW;EACX,cAAc;EACd,cAAc;EACd,eAAe;EACf,kBAAkB;EAClB,uBAAuB;EACvB,gBAAgB,EAAE;EAClB;IACE,WAAW,EAAE;;AAEjB;EACE,YAAY,EAAE","file":"index.scss","sourcesContent":[".brew-list .brew-list--item {\n  height: auto; }\n  .brew-list .brew-list--item .mdc-list-item__text {\n    width: 100%;\n    display: inline-flex;\n    padding: 25px 0px; }\n\n.brew-list .brew-list--cell {\n  width: 100%;\n  max-width: 33%;\n  margin: auto 0;\n  padding: 0 15px;\n  overflow-x: hidden;\n  text-overflow: ellipsis;\n  text-align: left; }\n  .brew-list .brew-list--cell.brew-list--type {\n    width: 50px; }\n\n.brew-list .brew-list--text {\n  margin: auto; }\n"]}]);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./src/components/Brewery/index.scss":
+/*!******************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--4-1!./node_modules/postcss-loader/src??ref--4-2!./node_modules/sass-loader/lib/loader.js??ref--4-3!./src/components/Brewery/index.scss ***!
+  \******************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
+// Module
+exports.push([module.i, ".brew {\n  background: white;\n  min-height: calc(100vh / 3); }\n", "",{"version":3,"sources":["index.scss"],"names":[],"mappings":"AAAA;EACE,iBAAiB;EACjB,2BAA2B,EAAE","file":"index.scss","sourcesContent":[".brew {\n  background: white;\n  min-height: calc(100vh / 3); }\n"]}]);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./src/components/Search/City/index.scss":
+/*!**********************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--4-1!./node_modules/postcss-loader/src??ref--4-2!./node_modules/sass-loader/lib/loader.js??ref--4-3!./src/components/Search/City/index.scss ***!
+  \**********************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
+// Module
+exports.push([module.i, ".background--primary {\n  background: #ece8da; }\n\n.background--primary-lighter {\n  background: #fdfdfc; }\n\n.background--primary-darker {\n  background: #dbd3b8; }\n\n.text--primary {\n  color: #ece8da; }\n\n.text--primary-lighter {\n  color: #fdfdfc; }\n\n.text--primary-darker {\n  color: #dbd3b8; }\n\n.background--secondary {\n  background: #d13939; }\n\n.background--secondary-lighter {\n  background: #db6262; }\n\n.background--secondary-darker {\n  background: #ae2929; }\n\n.text--secondary {\n  color: #d13939; }\n\n.text--secondary-lighter {\n  color: #db6262; }\n\n.text--secondary-darker {\n  color: #ae2929; }\n\n.background--accent {\n  background: #f2cd30; }\n\n.background--accent-lighter {\n  background: #f5d960; }\n\n.background--accent-darker {\n  background: #e1b90e; }\n\n.text--accent {\n  color: #f2cd30; }\n\n.text--accent-lighter {\n  color: #f5d960; }\n\n.text--accent-darker {\n  color: #e1b90e; }\n\n.background--text {\n  background: #ece8da; }\n\n.background--text-lighter {\n  background: #fdfdfc; }\n\n.background--text-darker {\n  background: #dbd3b8; }\n\n.text--text {\n  color: #ece8da; }\n\n.text--text-lighter {\n  color: #fdfdfc; }\n\n.text--text-darker {\n  color: #dbd3b8; }\n\n.background--background {\n  background: #333; }\n\n.background--background-lighter {\n  background: #4d4d4d; }\n\n.background--background-darker {\n  background: #1a1a1a; }\n\n.text--background {\n  color: #333; }\n\n.text--background-lighter {\n  color: #4d4d4d; }\n\n.text--background-darker {\n  color: #1a1a1a; }\n\n.background--surface {\n  background: #f2f2f2; }\n\n.background--surface-lighter {\n  background: white; }\n\n.background--surface-darker {\n  background: #d9d9d9; }\n\n.text--surface {\n  color: #f2f2f2; }\n\n.text--surface-lighter {\n  color: white; }\n\n.text--surface-darker {\n  color: #d9d9d9; }\n\n.city--input-width, .citypicker, .citypicker .citypicker--container, .citypicker .citypicker--spinner-container {\n  width: 200px;\n  max-width: 100%; }\n\n.citypicker {\n  position: relative;\n  z-index: 1;\n  background: transparent; }\n  .citypicker .citypicker--container {\n    min-height: 60px;\n    height: auto;\n    max-height: 300px;\n    overflow-x: hidden;\n    overflow-y: auto;\n    display: none;\n    position: absolute;\n    z-index: 2;\n    top: -34px;\n    bottom: initial;\n    left: 0;\n    right: initial;\n    background: whitesmoke;\n    color: #333;\n    border-top: 1px solid rgba(51, 51, 51, 0.1); }\n  .citypicker.citypicker--open .citypicker--container {\n    display: initial; }\n  .citypicker .citypicker--item {\n    padding: 10px; }\n    .citypicker .citypicker--item:hover {\n      background: gainsboro; }\n    .citypicker .citypicker--item:active {\n      background: #d13939; }\n  .citypicker .citypicker--spinner-container {\n    display: -webkit-inline-box;\n    display: inline-flex;\n    -webkit-box-pack: center;\n            justify-content: center;\n    align-content: center;\n    -webkit-animation: spin 1.5s linear infinite;\n            animation: spin 1.5s linear infinite; }\n\n@-webkit-keyframes spin {\n  0% {\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg); }\n  100% {\n    -webkit-transform: rotate(360deg);\n            transform: rotate(360deg); } }\n\n@keyframes spin {\n  0% {\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg); }\n  100% {\n    -webkit-transform: rotate(360deg);\n            transform: rotate(360deg); } }\n", "",{"version":3,"sources":["index.scss"],"names":[],"mappings":"AAAA;EACE,mBAAmB,EAAE;;AAEvB;EACE,mBAAmB,EAAE;;AAEvB;EACE,mBAAmB,EAAE;;AAEvB;EACE,cAAc,EAAE;;AAElB;EACE,cAAc,EAAE;;AAElB;EACE,cAAc,EAAE;;AAElB;EACE,mBAAmB,EAAE;;AAEvB;EACE,mBAAmB,EAAE;;AAEvB;EACE,mBAAmB,EAAE;;AAEvB;EACE,cAAc,EAAE;;AAElB;EACE,cAAc,EAAE;;AAElB;EACE,cAAc,EAAE;;AAElB;EACE,mBAAmB,EAAE;;AAEvB;EACE,mBAAmB,EAAE;;AAEvB;EACE,mBAAmB,EAAE;;AAEvB;EACE,cAAc,EAAE;;AAElB;EACE,cAAc,EAAE;;AAElB;EACE,cAAc,EAAE;;AAElB;EACE,mBAAmB,EAAE;;AAEvB;EACE,mBAAmB,EAAE;;AAEvB;EACE,mBAAmB,EAAE;;AAEvB;EACE,cAAc,EAAE;;AAElB;EACE,cAAc,EAAE;;AAElB;EACE,cAAc,EAAE;;AAElB;EACE,gBAAgB,EAAE;;AAEpB;EACE,mBAAmB,EAAE;;AAEvB;EACE,mBAAmB,EAAE;;AAEvB;EACE,WAAW,EAAE;;AAEf;EACE,cAAc,EAAE;;AAElB;EACE,cAAc,EAAE;;AAElB;EACE,mBAAmB,EAAE;;AAEvB;EACE,iBAAiB,EAAE;;AAErB;EACE,mBAAmB,EAAE;;AAEvB;EACE,cAAc,EAAE;;AAElB;EACE,YAAY,EAAE;;AAEhB;EACE,cAAc,EAAE;;AAElB;EACE,YAAY;EACZ,eAAe,EAAE;;AAEnB;EACE,kBAAkB;EAClB,UAAU;EACV,uBAAuB,EAAE;EACzB;IACE,gBAAgB;IAChB,YAAY;IACZ,iBAAiB;IACjB,kBAAkB;IAClB,gBAAgB;IAChB,aAAa;IACb,kBAAkB;IAClB,UAAU;IACV,UAAU;IACV,eAAe;IACf,OAAO;IACP,cAAc;IACd,sBAAsB;IACtB,WAAW;IACX,2CAA2C,EAAE;EAC/C;IACE,gBAAgB,EAAE;EACpB;IACE,aAAa,EAAE;IACf;MACE,qBAAqB,EAAE;IACzB;MACE,mBAAmB,EAAE;EACzB;IACE,2BAAoB;IAApB,oBAAoB;IACpB,wBAAuB;YAAvB,uBAAuB;IACvB,qBAAqB;IACrB,4CAAoC;YAApC,oCAAoC,EAAE;;AAE1C;EACE;IACE,+BAAuB;YAAvB,uBAAuB,EAAE;EAC3B;IACE,iCAAyB;YAAzB,yBAAyB,EAAE,EAAE;;AAJjC;EACE;IACE,+BAAuB;YAAvB,uBAAuB,EAAE;EAC3B;IACE,iCAAyB;YAAzB,yBAAyB,EAAE,EAAE","file":"index.scss","sourcesContent":[".background--primary {\n  background: #ece8da; }\n\n.background--primary-lighter {\n  background: #fdfdfc; }\n\n.background--primary-darker {\n  background: #dbd3b8; }\n\n.text--primary {\n  color: #ece8da; }\n\n.text--primary-lighter {\n  color: #fdfdfc; }\n\n.text--primary-darker {\n  color: #dbd3b8; }\n\n.background--secondary {\n  background: #d13939; }\n\n.background--secondary-lighter {\n  background: #db6262; }\n\n.background--secondary-darker {\n  background: #ae2929; }\n\n.text--secondary {\n  color: #d13939; }\n\n.text--secondary-lighter {\n  color: #db6262; }\n\n.text--secondary-darker {\n  color: #ae2929; }\n\n.background--accent {\n  background: #f2cd30; }\n\n.background--accent-lighter {\n  background: #f5d960; }\n\n.background--accent-darker {\n  background: #e1b90e; }\n\n.text--accent {\n  color: #f2cd30; }\n\n.text--accent-lighter {\n  color: #f5d960; }\n\n.text--accent-darker {\n  color: #e1b90e; }\n\n.background--text {\n  background: #ece8da; }\n\n.background--text-lighter {\n  background: #fdfdfc; }\n\n.background--text-darker {\n  background: #dbd3b8; }\n\n.text--text {\n  color: #ece8da; }\n\n.text--text-lighter {\n  color: #fdfdfc; }\n\n.text--text-darker {\n  color: #dbd3b8; }\n\n.background--background {\n  background: #333; }\n\n.background--background-lighter {\n  background: #4d4d4d; }\n\n.background--background-darker {\n  background: #1a1a1a; }\n\n.text--background {\n  color: #333; }\n\n.text--background-lighter {\n  color: #4d4d4d; }\n\n.text--background-darker {\n  color: #1a1a1a; }\n\n.background--surface {\n  background: #f2f2f2; }\n\n.background--surface-lighter {\n  background: white; }\n\n.background--surface-darker {\n  background: #d9d9d9; }\n\n.text--surface {\n  color: #f2f2f2; }\n\n.text--surface-lighter {\n  color: white; }\n\n.text--surface-darker {\n  color: #d9d9d9; }\n\n.city--input-width, .citypicker, .citypicker .citypicker--container, .citypicker .citypicker--spinner-container {\n  width: 200px;\n  max-width: 100%; }\n\n.citypicker {\n  position: relative;\n  z-index: 1;\n  background: transparent; }\n  .citypicker .citypicker--container {\n    min-height: 60px;\n    height: auto;\n    max-height: 300px;\n    overflow-x: hidden;\n    overflow-y: auto;\n    display: none;\n    position: absolute;\n    z-index: 2;\n    top: -34px;\n    bottom: initial;\n    left: 0;\n    right: initial;\n    background: whitesmoke;\n    color: #333;\n    border-top: 1px solid rgba(51, 51, 51, 0.1); }\n  .citypicker.citypicker--open .citypicker--container {\n    display: initial; }\n  .citypicker .citypicker--item {\n    padding: 10px; }\n    .citypicker .citypicker--item:hover {\n      background: gainsboro; }\n    .citypicker .citypicker--item:active {\n      background: #d13939; }\n  .citypicker .citypicker--spinner-container {\n    display: inline-flex;\n    justify-content: center;\n    align-content: center;\n    animation: spin 1.5s linear infinite; }\n\n@keyframes spin {\n  0% {\n    transform: rotate(0deg); }\n  100% {\n    transform: rotate(360deg); } }\n"]}]);
 
 
 /***/ }),
@@ -42,14 +84,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _app_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_app_scss__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _material_react_layout_grid__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material/react-layout-grid */ "./node_modules/@material/react-layout-grid/dist/index.js");
-/* harmony import */ var _material_react_layout_grid__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_react_layout_grid__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _material_react_layout_grid_index_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material/react-layout-grid/index.scss */ "./node_modules/@material/react-layout-grid/index.scss");
-/* harmony import */ var _material_react_layout_grid_index_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_react_layout_grid_index_scss__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _components_Search_Input__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/Search/Input */ "./src/components/Search/Input/index.js");
-/* harmony import */ var _components_Search_City__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/Search/City */ "./src/components/Search/City/index.js");
-/* harmony import */ var _components_Brewery_List__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/Brewery/List */ "./src/components/Brewery/List/index.js");
-/* harmony import */ var _components_Search__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/Search */ "./src/components/Search/index.js");
+/* harmony import */ var _material_react_layout_grid_index_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material/react-layout-grid/index.scss */ "./node_modules/@material/react-layout-grid/index.scss");
+/* harmony import */ var _material_react_layout_grid_index_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_react_layout_grid_index_scss__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _components_Brewery__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/Brewery */ "./src/components/Brewery/index.js");
+/* harmony import */ var _components_Search__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/Search */ "./src/components/Search/index.js");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; var ownKeys = Object.keys(source); if (typeof Object.getOwnPropertySymbols === 'function') { ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) { return Object.getOwnPropertyDescriptor(source, sym).enumerable; })); } ownKeys.forEach(function (key) { _defineProperty(target, key, source[key]); }); } return target; }
@@ -77,9 +115,6 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
-
-
-
 var App =
 /*#__PURE__*/
 function (_Component) {
@@ -99,7 +134,8 @@ function (_Component) {
     _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(App)).call.apply(_getPrototypeOf2, [this].concat(props)));
     _this.state = {
       loading: false,
-      breweries: []
+      breweries: [],
+      selectedCity: {}
     };
     return _this;
   }
@@ -109,35 +145,45 @@ function (_Component) {
     value: function render() {
       var _this2 = this;
 
+      // const propagateCitySelection = (selectedCity)=> this.setState({ selectedCity })
       return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "width--100 flex flex--align-start background--background text--text padding--top-20 mdc-elevation--z2"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Search__WEBPACK_IMPORTED_MODULE_7__["SearchComponent"], {
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Search__WEBPACK_IMPORTED_MODULE_4__["SearchComponent"], {
         props: _objectSpread({}, this.state),
+        propagateCitySelection: function propagateCitySelection(selectedCity) {
+          return _this2.setState({
+            selectedCity: selectedCity
+          });
+        },
         onLoadChange: function onLoadChange(loading) {
           return _this2.onLoadChange(loading);
         },
-        onBreweriesLoad: function onBreweriesLoad(breweries) {
-          return _this2.onBreweriesLoad(breweries);
+        onBreweryLoad: function onBreweryLoad(breweries) {
+          return _this2.onBreweryLoad(breweries);
         }
       })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "width--100 flex flex--align-start flex--justify-start mdc-theme--surface"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Brewery_List__WEBPACK_IMPORTED_MODULE_6__["BreweryList"], {
-        breweries: this.state.breweries
+        className: "width--100 mdc-theme--surface"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Brewery__WEBPACK_IMPORTED_MODULE_3__["BreweryComponent"], {
+        breweries: this.state.breweries,
+        loading: this.state.loading,
+        selectedCity: this.state.selectedCity
       })));
     }
   }, {
-    key: "onBreweriesLoad",
-    value: function onBreweriesLoad(breweries) {
-      return this.setState({
+    key: "onBreweryLoad",
+    value: function onBreweryLoad(breweries) {
+      this.setState({
         breweries: breweries
       });
+      return breweries;
     }
   }, {
     key: "onLoadChange",
     value: function onLoadChange(loading) {
-      return this.setState({
+      this.setState({
         loading: loading
       });
+      return loading;
     }
   }]);
 
@@ -177,20 +223,29 @@ if(false) {}
 
 /***/ }),
 
-/***/ "./src/components/Brewery/List/index.js":
+/***/ "./src/components/Brewery/Item/index.js":
 /*!**********************************************!*\
-  !*** ./src/components/Brewery/List/index.js ***!
+  !*** ./src/components/Brewery/Item/index.js ***!
   \**********************************************/
-/*! exports provided: BreweryList, default */
+/*! exports provided: BreweryItem */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BreweryList", function() { return BreweryList; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ "./src/components/Brewery/List/index.scss");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BreweryItem", function() { return BreweryItem; });
+/* harmony import */ var _material_react_dialog_index_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @material/react-dialog/index.scss */ "./node_modules/@material/react-dialog/index.scss");
+/* harmony import */ var _material_react_dialog_index_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_material_react_dialog_index_scss__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ "./src/components/Brewery/Item/index.scss");
 /* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var ramda__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ramda */ "./node_modules/ramda/es/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _material_react_dialog__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material/react-dialog */ "./node_modules/@material/react-dialog/dist/index.js");
+/* harmony import */ var _material_react_dialog__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_react_dialog__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var google_map_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! google-map-react */ "./node_modules/google-map-react/lib/index.js");
+/* harmony import */ var google_map_react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(google_map_react__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _shared__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../shared */ "./src/components/Brewery/shared.js");
+/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../constants */ "./src/components/Brewery/constants.js");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -212,48 +267,381 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
-var loadingSpinner = function loadingSpinner() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    "class": "width--100 height--100"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    "class": "mdi mdi-loading"
-  }));
-}; // TODO: Make this a separate component that implements MDC List Component
 
 
-var breweryListItem = function breweryListItem(item) {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, " ", item, " ");
+
+
+
+var BreweryItem =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(BreweryItem, _Component);
+
+  function BreweryItem() {
+    var _getPrototypeOf2;
+
+    _classCallCheck(this, BreweryItem);
+
+    for (var _len = arguments.length, props = new Array(_len), _key = 0; _key < _len; _key++) {
+      props[_key] = arguments[_key];
+    }
+
+    return _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(BreweryItem)).call.apply(_getPrototypeOf2, [this].concat(props)));
+  }
+
+  _createClass(BreweryItem, [{
+    key: "render",
+    value: function render() {
+      var _this = this;
+
+      console.log('brewery item rendering');
+      console.log(this.props.selectedBrewery);
+
+      var onClose = function onClose() {
+        return _this.handleClose();
+      };
+
+      var brewery = this.props.selectedBrewery;
+      return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+        className: "brew--dialog"
+      }, brewery && this.props.isOpen && react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_material_react_dialog__WEBPACK_IMPORTED_MODULE_4___default.a, {
+        open: this.props.isOpen,
+        onClose: onClose
+      }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_material_react_dialog__WEBPACK_IMPORTED_MODULE_4__["DialogContent"], null, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("h6", {
+        className: "mdc-typography--headline6"
+      }, Object(_shared__WEBPACK_IMPORTED_MODULE_6__["getBreweryTypeIcon"])(brewery), brewery.name), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+        className: "width--100"
+      }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("p", {
+        className: "mdc-typography--subtitle1"
+      }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("i", {
+        className: "mdi mdi-map-marker mdc-theme--secondary"
+      }), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("b", null, "Location")), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("p", {
+        className: "mdc-typography--body2"
+      }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("span", null, brewery.street), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("span", null, brewery.city, ", ", brewery.state), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("span", null, brewery.postal_code)), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("a", {
+        className: "mdc-button",
+        href: getLink(brewery)
+      }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("i", {
+        className: "mdi mdi-navigation"
+      }), "Get Directions")), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(BreweryMap, {
+        brewery: brewery
+      })), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_material_react_dialog__WEBPACK_IMPORTED_MODULE_4__["DialogFooter"], null, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_material_react_dialog__WEBPACK_IMPORTED_MODULE_4__["DialogButton"], {
+        className: "mdc-theme--secondary",
+        action: "dismiss"
+      }, "Close"))));
+    }
+  }, {
+    key: "handleClose",
+    value: function handleClose() {
+      this.props.onClose();
+    }
+  }]);
+
+  return BreweryItem;
+}(react__WEBPACK_IMPORTED_MODULE_3__["Component"]);
+
+var getLink = function getLink(b) {
+  return encodeURI("https://www.google.com/maps/dir/".concat(b.name, " ").concat(b.street, " ").concat(b.city, ", ").concat(b.state, " ").concat(b.postal_code));
 };
 
+var BreweryMap =
+/*#__PURE__*/
+function (_Component2) {
+  _inherits(BreweryMap, _Component2);
+
+  function BreweryMap(props) {
+    var _this2;
+
+    _classCallCheck(this, BreweryMap);
+
+    _this2 = _possibleConstructorReturn(this, _getPrototypeOf(BreweryMap).call(this, props));
+    _this2.state = {
+      center: {
+        lat: 0,
+        lng: 0
+      }
+    };
+    return _this2;
+  }
+
+  _createClass(BreweryMap, [{
+    key: "render",
+    value: function render() {
+      var lat = Number(this.props.brewery.latitude);
+      var lng = Number(this.props.brewery.longitude);
+      var coordinates = {
+        lat: lat,
+        lng: lng
+      };
+      return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+        style: {
+          height: '750px',
+          width: '100%'
+        }
+      }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(google_map_react__WEBPACK_IMPORTED_MODULE_5___default.a, {
+        bootstrapURLKeys: {
+          key: _constants__WEBPACK_IMPORTED_MODULE_7__["GOOGLE_MAP_KEY"]
+        },
+        yesIWantToUseGoogleMapApiInternals: true,
+        defaultCenter: coordinates,
+        defaultZoom: 11
+      }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(Marker, {
+        lat: lat,
+        lng: lng
+      })));
+    }
+  }]);
+
+  return BreweryMap;
+}(react__WEBPACK_IMPORTED_MODULE_3__["Component"]);
+
+var Marker = function Marker(_ref) {
+  var lat = _ref.lat,
+      lng = _ref.lng;
+  return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+    className: "mdc-theme--secondary-bg",
+    lat: lat,
+    lng: lng,
+    style: {
+      alignItems: 'center',
+      background: 'grey',
+      borderRadius: '100%',
+      color: 'white',
+      display: 'inline-flex',
+      justifyContent: 'center',
+      padding: '15px 10px',
+      textAlign: 'center',
+      transform: 'translate(-50%, -50%)'
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("i", {
+    className: "mdi mdi-beer"
+  }));
+};
+
+/***/ }),
+
+/***/ "./src/components/Brewery/Item/index.scss":
+/*!************************************************!*\
+  !*** ./src/components/Brewery/Item/index.scss ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js??ref--4-1!../../../../node_modules/postcss-loader/src??ref--4-2!../../../../node_modules/sass-loader/lib/loader.js??ref--4-3!./index.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./src/components/Brewery/Item/index.scss");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./src/components/Brewery/List/index.js":
+/*!**********************************************!*\
+  !*** ./src/components/Brewery/List/index.js ***!
+  \**********************************************/
+/*! exports provided: BreweryList, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BreweryList", function() { return BreweryList; });
+/* harmony import */ var _material_react_list_index_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @material/react-list/index.scss */ "./node_modules/@material/react-list/index.scss");
+/* harmony import */ var _material_react_list_index_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_material_react_list_index_scss__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ "./src/components/Brewery/List/index.scss");
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var ramda__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ramda */ "./node_modules/ramda/es/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _material_react_list__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material/react-list */ "./node_modules/@material/react-list/dist/index.js");
+/* harmony import */ var _material_react_list__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_react_list__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../constants */ "./src/components/Brewery/constants.js");
+/* harmony import */ var _shared__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../shared */ "./src/components/Brewery/shared.js");
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+
+
+
+
+
+window.R = ramda__WEBPACK_IMPORTED_MODULE_2__;
 var BreweryList =
 /*#__PURE__*/
 function (_Component) {
   _inherits(BreweryList, _Component);
 
   function BreweryList(props) {
-    var _this;
-
     _classCallCheck(this, BreweryList);
 
-    _this = _possibleConstructorReturn(this, _getPrototypeOf(BreweryList).call(this, props));
-    _this.state = {
-      data: [],
-      loading: false
-    };
-    return _this;
+    return _possibleConstructorReturn(this, _getPrototypeOf(BreweryList).call(this, props));
   }
 
   _createClass(BreweryList, [{
     key: "render",
     value: function render() {
-      var isLoading = this.state.loading;
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, isLoading ? loadingSpinner() : this.state.data.map(breweryListItem));
+      var _this = this;
+
+      var isLoading = this.props.loading;
+      var filterPred = this.props.selectedCity && this.props.breweries ? cityNameLike(this.props.selectedCity) : ramda__WEBPACK_IMPORTED_MODULE_2__["T"];
+      var breweries = this.props.breweries.filter(filterPred);
+      return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", null, isLoading ? react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+        "class": "width--100 height--100"
+      }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("i", {
+        "class": "mdi mdi-loading"
+      })) : react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(BreweryList_, {
+        breweries: breweries,
+        onSelect: function onSelect(breweryId) {
+          return _this.handleBrewerySelect(breweryId);
+        }
+      }));
+    }
+  }, {
+    key: "handleBrewerySelect",
+    value: function handleBrewerySelect(breweryId) {
+      this.props.onSelect(ramda__WEBPACK_IMPORTED_MODULE_2__["find"](ramda__WEBPACK_IMPORTED_MODULE_2__["propEq"]('id', Number(breweryId)), this.props.breweries));
     }
   }]);
 
   return BreweryList;
-}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
-/* harmony default export */ __webpack_exports__["default"] = (BreweryList);
+}(react__WEBPACK_IMPORTED_MODULE_3__["Component"]);
+/* harmony default export */ __webpack_exports__["default"] = (BreweryList); //-- Display value formatting
+
+var castToLowerCase = function castToLowerCase(s) {
+  return String(s).toLowerCase().trim();
+};
+
+var caseInsensitiveIncludes = function caseInsensitiveIncludes(a, b) {
+  return castToLowerCase(a).includes(castToLowerCase(b));
+};
+
+var cityNameLens = ramda__WEBPACK_IMPORTED_MODULE_2__["lensPath"](['city']);
+
+var cityNameLike = function cityNameLike(selectedCity) {
+  return ramda__WEBPACK_IMPORTED_MODULE_2__["compose"](ramda__WEBPACK_IMPORTED_MODULE_2__["partial"](caseInsensitiveIncludes, [ramda__WEBPACK_IMPORTED_MODULE_2__["view"](cityNameLens, selectedCity)]), ramda__WEBPACK_IMPORTED_MODULE_2__["view"](cityNameLens));
+};
+/**
+ * @private @class BreweryList_
+ * Renders Breweries when the component isn't loading.
+ * Pushes selectedBrewery state up the component chain when a brewery is clicked
+ */
+
+
+var BreweryList_ =
+/*#__PURE__*/
+function (_Component2) {
+  _inherits(BreweryList_, _Component2);
+
+  function BreweryList_() {
+    _classCallCheck(this, BreweryList_);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(BreweryList_).apply(this, arguments));
+  }
+
+  _createClass(BreweryList_, [{
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      var onSelect = function onSelect(e) {
+        return _this2.props.onSelect(e.currentTarget.dataset.id);
+      };
+
+      return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_4___default.a, {
+        className: "brew-list",
+        tag: "div"
+      }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_4__["ListItem"], {
+        className: "brew-list--header",
+        tag: "div"
+      }, breweryColumns.map(function (name, index) {
+        return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+          key: index,
+          className: cellClass(name, true)
+        }, columnNameMap[name]);
+      })), this.props.breweries.map(function (b, index) {
+        return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_material_react_list__WEBPACK_IMPORTED_MODULE_4__["ListItem"], {
+          key: index,
+          onClick: onSelect,
+          "data-id": b.id,
+          tag: "div",
+          className: "brew-list--item"
+        }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+          className: "mdc-list-item__text"
+        }, breweryColumns.map(function (column, colIndex) {
+          return breweryCell(column, colIndex, b);
+        })));
+      }));
+    }
+  }]);
+
+  return BreweryList_;
+}(react__WEBPACK_IMPORTED_MODULE_3__["Component"]);
+
+var breweryCell = function breweryCell(key, colIndex, brewery) {
+  return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+    key: colIndex,
+    className: cellClass(key)
+  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+    className: "brew-list--text mdc-typography--body1"
+  }, ramda__WEBPACK_IMPORTED_MODULE_2__["prop"](key, brewerySpec)(brewery)));
+};
+
+var cellClass = function cellClass(name) {
+  var header = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
+  return "brew-list--cell brew-list--".concat(name, " ").concat(header ? 'mdc-typography--headline6' : '');
+}; //-- Faux-column data mapping
+
+
+var breweryColumns = ['type', 'name', 'website_url', 'address'];
+var columnNameMap = {
+  type: '',
+  name: 'Name',
+  website_url: 'Site',
+  address: 'Location'
+};
+var brewerySpec = {
+  type: ramda__WEBPACK_IMPORTED_MODULE_2__["pipe"](ramda__WEBPACK_IMPORTED_MODULE_2__["prop"]('type'), _shared__WEBPACK_IMPORTED_MODULE_6__["getBreweryTypeIcon"]),
+  name: ramda__WEBPACK_IMPORTED_MODULE_2__["prop"]('name'),
+  website_url: ramda__WEBPACK_IMPORTED_MODULE_2__["pipe"](ramda__WEBPACK_IMPORTED_MODULE_2__["prop"]('website_url'), function (url) {
+    return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("a", {
+      href: url,
+      target: "_blank"
+    }, url);
+  }),
+  address: function address(b) {
+    return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("span", null, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("span", null, b.street), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("span", null, b.city, ", ", b.state), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("span", null, b.postal_code));
+  }
+};
 
 /***/ }),
 
@@ -287,18 +675,45 @@ if(false) {}
 
 /***/ }),
 
-/***/ "./src/components/Search/City/AutoComplete.js":
-/*!****************************************************!*\
-  !*** ./src/components/Search/City/AutoComplete.js ***!
-  \****************************************************/
-/*! exports provided: AutoComplete, default */
+/***/ "./src/components/Brewery/constants.js":
+/*!*********************************************!*\
+  !*** ./src/components/Brewery/constants.js ***!
+  \*********************************************/
+/*! exports provided: BREWERY_TYPES, GOOGLE_MAP_KEY */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AutoComplete", function() { return AutoComplete; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BREWERY_TYPES", function() { return BREWERY_TYPES; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GOOGLE_MAP_KEY", function() { return GOOGLE_MAP_KEY; });
+/**
+ * @module constants - Provide constants that are used throughout the Brewery Components
+ */
+var BREWERY_TYPES = ['bar', 'brewpub', 'contract', 'large', 'micro', 'planning', 'proprietor', 'regional']; // FIXME: Add a real Google Map API Key
+
+var GOOGLE_MAP_KEY = 'NOT_A_REAL_SECRET_KEY';
+
+/***/ }),
+
+/***/ "./src/components/Brewery/index.js":
+/*!*****************************************!*\
+  !*** ./src/components/Brewery/index.js ***!
+  \*****************************************/
+/*! exports provided: BreweryComponent, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BreweryComponent", function() { return BreweryComponent; });
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.scss */ "./src/components/Brewery/index.scss");
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var ramda__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ramda */ "./node_modules/ramda/es/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _material_react_layout_grid__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material/react-layout-grid */ "./node_modules/@material/react-layout-grid/dist/index.js");
+/* harmony import */ var _material_react_layout_grid__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_react_layout_grid__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _List__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./List */ "./src/components/Brewery/List/index.js");
+/* harmony import */ var _Item__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Item */ "./src/components/Brewery/Item/index.js");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -318,52 +733,236 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
 
-/**
- * @typedef {Object} State
- * @property {Number} id
- * @property {String} name
- * @property {String} abbreviation
- */
 
-/**
- * @typedef {Object} City
- * @property {Number} id
- * @property {String} city - City name
- * @property {String} city_ascii
- * @property {Number} lat - Latitude
- * @property {Number} lng - Longitude
- * @property {State} state
- * @property {String[]} zips - List of zip codes
- */
 
-var AutoComplete =
+
+
+
+var BreweryComponent =
 /*#__PURE__*/
 function (_Component) {
-  _inherits(AutoComplete, _Component);
+  _inherits(BreweryComponent, _Component);
 
-  function AutoComplete(props) {
+  function BreweryComponent(props) {
     var _this;
 
-    _classCallCheck(this, AutoComplete);
+    _classCallCheck(this, BreweryComponent);
 
-    _this = _possibleConstructorReturn(this, _getPrototypeOf(AutoComplete).call(this, props));
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(BreweryComponent).call(this, props));
     _this.state = {
-      loading: false,
-      selection: null
+      selectedBrewery: null,
+      isOpen: false
     };
     return _this;
   }
 
-  _createClass(AutoComplete, [{
+  _createClass(BreweryComponent, [{
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null);
+      var _this2 = this;
+
+      var onSelect = function onSelect(breweryId) {
+        return _this2.onSelect(breweryId);
+      };
+
+      return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_react_layout_grid__WEBPACK_IMPORTED_MODULE_3__["Grid"], {
+        align: "left"
+      }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_react_layout_grid__WEBPACK_IMPORTED_MODULE_3__["Row"], null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_react_layout_grid__WEBPACK_IMPORTED_MODULE_3__["Cell"], {
+        columns: 1
+      }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_react_layout_grid__WEBPACK_IMPORTED_MODULE_3__["Cell"], {
+        className: "brew mdc-elevation--z3",
+        columns: 10
+      }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_List__WEBPACK_IMPORTED_MODULE_4__["BreweryList"], {
+        onSelect: onSelect,
+        breweries: this.props.breweries
+      })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_react_layout_grid__WEBPACK_IMPORTED_MODULE_3__["Cell"], {
+        columns: 1
+      }))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Item__WEBPACK_IMPORTED_MODULE_5__["BreweryItem"], {
+        selectedBrewery: this.state.selectedBrewery,
+        isOpen: this.state.isOpen,
+        onClose: function onClose() {
+          return onSelect(null);
+        }
+      }));
+    }
+  }, {
+    key: "onSelect",
+    value: function onSelect(selectedBrewery) {
+      if (!selectedBrewery) {
+        this.setState({
+          selectedBrewery: null,
+          isOpen: false
+        });
+        return false;
+      }
+
+      console.log('BreweryComponent.onSelect');
+      console.log(selectedBrewery);
+      this.setState({
+        selectedBrewery: selectedBrewery,
+        isOpen: true
+      });
+      return selectedBrewery;
     }
   }]);
 
-  return AutoComplete;
-}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
-/* harmony default export */ __webpack_exports__["default"] = (AutoComplete);
+  return BreweryComponent;
+}(react__WEBPACK_IMPORTED_MODULE_2__["Component"]);
+/* harmony default export */ __webpack_exports__["default"] = (BreweryComponent);
+
+/***/ }),
+
+/***/ "./src/components/Brewery/index.scss":
+/*!*******************************************!*\
+  !*** ./src/components/Brewery/index.scss ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--4-1!../../../node_modules/postcss-loader/src??ref--4-2!../../../node_modules/sass-loader/lib/loader.js??ref--4-3!./index.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./src/components/Brewery/index.scss");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./src/components/Brewery/shared.js":
+/*!******************************************!*\
+  !*** ./src/components/Brewery/shared.js ***!
+  \******************************************/
+/*! exports provided: getBreweryTypeIcon */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getBreweryTypeIcon", function() { return getBreweryTypeIcon; });
+/* harmony import */ var ramda__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ramda */ "./node_modules/ramda/es/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+
+
+var breweryType = ramda__WEBPACK_IMPORTED_MODULE_0__["prop"]('type');
+var eq = ramda__WEBPACK_IMPORTED_MODULE_0__["equals"](ramda__WEBPACK_IMPORTED_MODULE_0__["__"]);
+var iconConditions = ramda__WEBPACK_IMPORTED_MODULE_0__["cond"]([[eq('bar'), ramda__WEBPACK_IMPORTED_MODULE_0__["always"]('mdi mdi-cocktail')], [eq('brewpub'), ramda__WEBPACK_IMPORTED_MODULE_0__["always"]('mdi mdi-restaurant')], [ramda__WEBPACK_IMPORTED_MODULE_0__["anyPass"]([eq('contract'), eq('large'), eq('regional')]), ramda__WEBPACK_IMPORTED_MODULE_0__["always"]('mdi mdi-office-building')], [ramda__WEBPACK_IMPORTED_MODULE_0__["T"], ramda__WEBPACK_IMPORTED_MODULE_0__["always"]('mdi mdi-beer')]]);
+var getIconClass = ramda__WEBPACK_IMPORTED_MODULE_0__["compose"](iconConditions, breweryType);
+var getBreweryTypeIcon = function getBreweryTypeIcon(b) {
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
+    className: getIconClass(b)
+  });
+};
+
+/***/ }),
+
+/***/ "./src/components/Search/City/CityPicker.js":
+/*!**************************************************!*\
+  !*** ./src/components/Search/City/CityPicker.js ***!
+  \**************************************************/
+/*! exports provided: cityDisplayValue, CityPicker, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "cityDisplayValue", function() { return cityDisplayValue; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CityPicker", function() { return CityPicker; });
+/* harmony import */ var _material_react_list_index_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @material/react-list/index.scss */ "./node_modules/@material/react-list/index.scss");
+/* harmony import */ var _material_react_list_index_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_material_react_list_index_scss__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var ramda__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ramda */ "./node_modules/ramda/es/index.js");
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+
+var cityDisplayValue = function cityDisplayValue(city) {
+  return "".concat(city.city_ascii, ", ").concat(city.state.abbreviation);
+};
+var sortByDisplayValue = Object(ramda__WEBPACK_IMPORTED_MODULE_2__["sortBy"])(cityDisplayValue);
+var CityPicker =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(CityPicker, _Component);
+
+  function CityPicker(props) {
+    var _this;
+
+    _classCallCheck(this, CityPicker);
+
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(CityPicker).call(this, props));
+    _this.state = {
+      loading: false
+    };
+    return _this;
+  }
+
+  _createClass(CityPicker, [{
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      var cities = this.state.loading ? [] : sortByDisplayValue(this.props.cities);
+
+      var onCitySelect = function onCitySelect(e) {
+        return _this2.props.onCitySelect(e.target.getAttribute('data-id'));
+      };
+
+      var openClass = this.props.open ? 'citypicker--open' : 'citypicker--closed';
+      var pickerClass = openClass + ' citypicker';
+      return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        id: "citypicker",
+        className: pickerClass
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "citypicker--container"
+      }, this.state.loading ? react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "citypicker--spinner-container"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
+        className: "mdi mdi-loading citypicker--spinner"
+      })) : cities.map(function (city, index) {
+        return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+          className: "citypicker--item",
+          key: index,
+          "data-id": city.id,
+          onClick: onCitySelect
+        }, cityDisplayValue(city));
+      })));
+    }
+  }]);
+
+  return CityPicker;
+}(react__WEBPACK_IMPORTED_MODULE_1__["Component"]);
+/* harmony default export */ __webpack_exports__["default"] = (CityPicker);
 
 /***/ }),
 
@@ -377,15 +976,17 @@ function (_Component) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CityInput", function() { return CityInput; });
-/* harmony import */ var ramda__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ramda */ "./node_modules/ramda/es/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _material_react_text_field_index_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material/react-text-field/index.scss */ "./node_modules/@material/react-text-field/index.scss");
-/* harmony import */ var _material_react_text_field_index_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_react_text_field_index_scss__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _material_react_text_field__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material/react-text-field */ "./node_modules/@material/react-text-field/dist/index.js");
-/* harmony import */ var _material_react_text_field__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_react_text_field__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../utils */ "./src/components/utils.js");
-/* harmony import */ var _AutoComplete__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./AutoComplete */ "./src/components/Search/City/AutoComplete.js");
+/* harmony import */ var _material_react_text_field_index_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @material/react-text-field/index.scss */ "./node_modules/@material/react-text-field/index.scss");
+/* harmony import */ var _material_react_text_field_index_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_material_react_text_field_index_scss__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.scss */ "./src/components/Search/City/index.scss");
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var ramda__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ramda */ "./node_modules/ramda/es/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _material_react_text_field__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material/react-text-field */ "./node_modules/@material/react-text-field/dist/index.js");
+/* harmony import */ var _material_react_text_field__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_react_text_field__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../utils */ "./src/components/utils.js");
+/* harmony import */ var _CityPicker__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./CityPicker */ "./src/components/Search/City/CityPicker.js");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -411,6 +1012,25 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
+
+/**
+ * @typedef {Object} City
+ * @property {Number} id
+ * @property {String} city - City name
+ * @property {String} city_ascii
+ * @property {Number} lat - Latitude
+ * @property {Number} lng - Longitude
+ * @property {State} state
+ * @property {String[]} zips - List of zip codes
+ */
+
+/**
+ * @typedef {Object} State
+ * @property {Number} id
+ * @property {String} name
+ * @property {String} abbreviation
+ */
+
 var CityInput =
 /*#__PURE__*/
 function (_Component) {
@@ -432,8 +1052,12 @@ function (_Component) {
       loading: false,
       cities: [],
       query: '',
-      selectedCity: null
+      selectedCity: null,
+      focused: false
     };
+    _this.debounceFetchCities = Object(_utils__WEBPACK_IMPORTED_MODULE_5__["debounce"])(function (q) {
+      return _this.onCitySearch(q);
+    }, 200);
     return _this;
   }
 
@@ -442,79 +1066,130 @@ function (_Component) {
     value: function render() {
       var _this2 = this;
 
-      var fetchCities = Object(_utils__WEBPACK_IMPORTED_MODULE_4__["debounce"])(function (e) {
-        return _this2.onCitySearch(e);
-      }, 20);
-      var onCitySearch = Object(ramda__WEBPACK_IMPORTED_MODULE_0__["pipe"])(Object(ramda__WEBPACK_IMPORTED_MODULE_0__["tap"])(function (query) {
+      var onCitySearch = ramda__WEBPACK_IMPORTED_MODULE_2__["pipe"](ramda__WEBPACK_IMPORTED_MODULE_2__["tap"](function (query) {
         return _this2.setState({
           query: query
         });
-      }), Object(ramda__WEBPACK_IMPORTED_MODULE_0__["tap"])(fetchCities));
-
-      var handleCitySelect = function handleCitySelect(selectedCity) {
-        return _this2.handleCitySelect(selectedCity);
-      };
-
-      var value = this.state.query ? this.state.query : '';
-      return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_react_text_field__WEBPACK_IMPORTED_MODULE_3___default.a, {
+      }), ramda__WEBPACK_IMPORTED_MODULE_2__["tap"](this.debounceFetchCities));
+      return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+        className: "city--input-width"
+      }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_material_react_text_field__WEBPACK_IMPORTED_MODULE_4___default.a, {
         label: "Location",
-        helperText: react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_react_text_field__WEBPACK_IMPORTED_MODULE_3__["HelperText"], null, "Enter a City, State, and/or Zip Code")
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_react_text_field__WEBPACK_IMPORTED_MODULE_3__["Input"], {
-        value: value,
+        helperText: react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_material_react_text_field__WEBPACK_IMPORTED_MODULE_4__["HelperText"], null, "Enter a City, State, and/or Zip Code")
+      }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_material_react_text_field__WEBPACK_IMPORTED_MODULE_4__["Input"], {
+        value: this.state.query,
         onChange: function onChange(e) {
           return onCitySearch(e.target.value);
-        }
-      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_AutoComplete__WEBPACK_IMPORTED_MODULE_5__["AutoComplete"], {
+        },
+        onFocus: function onFocus() {
+          return _this2.onFocusChange({
+            focused: true
+          });
+        },
+        onBlur: Object(_utils__WEBPACK_IMPORTED_MODULE_5__["debounce"])(function () {
+          return _this2.onFocusChange({
+            focused: false
+          });
+        }, 200)
+      }))), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_CityPicker__WEBPACK_IMPORTED_MODULE_6__["CityPicker"], {
         cities: this.state.cities,
-        onCitySelect: handleCitySelect
-      }));
+        onCitySelect: function onCitySelect(selectedCity) {
+          return _this2.onCitySelect(selectedCity);
+        },
+        open: this.state.focused
+      })));
+    }
+  }, {
+    key: "onFocusChange",
+    value: function onFocusChange(_ref) {
+      var focused = _ref.focused;
+      this.setState({
+        focused: focused
+      });
+      return focused;
     }
   }, {
     key: "onCitySearch",
     value: function onCitySearch(query) {
       var _this3 = this;
 
-      console.log('CityInput.onCitySearch()');
-      console.log(query);
-      window._searchQuery = query;
-      console.log(query);
-
+      /**
+       * @method onCitySearch - Ensures search query is > 3 characters.
+       * Fetches cities & updates state
+       * TODO: Is there a better way to prevent race conditions
+       * vs. the 'this.state.query === query' we're doing below?
+       * @param {String} query - City Search query (entered by user)
+       * @returns {Promise<City[]>}
+       */
       if (query.length < 2) {
         return query;
-      } // Set the state
-
+      }
 
       this.setState({
-        query: query,
         loading: true
-      }); // Fetch the cities
-
+      });
       return fetch("/api/cities/?q=".concat(query)).then(function (cities) {
         return cities.json();
-      }).then(Object(ramda__WEBPACK_IMPORTED_MODULE_0__["sortBy"])(Object(ramda__WEBPACK_IMPORTED_MODULE_0__["prop"])('city_ascii'))).then(function (cities) {
-        return _this3.setState({
-          cities: cities
-        });
+      }).then(function (cities) {
+        if (_this3.state.query === query) {
+          _this3.setState({
+            cities: cities
+          });
+        }
+
+        return cities;
       })["catch"](function (err) {
-        console.error(err);
         alert("\n                    Encountered an error while attempting to fetch cities.\n                    Error: ".concat(err, "\n                "));
         return Promise.reject(err);
       });
     }
   }, {
-    key: "handleCitySelect",
-    value: function handleCitySelect(selectedCity) {
+    key: "onCitySelect",
+    value: function onCitySelect(cityId) {
+      var selectedCity = ramda__WEBPACK_IMPORTED_MODULE_2__["find"](ramda__WEBPACK_IMPORTED_MODULE_2__["propEq"]('id', Number(cityId)), this.state.cities) || null;
       this.setState({
-        selectedCity: selectedCity
+        selectedCity: selectedCity,
+        query: selectedCity ? Object(_CityPicker__WEBPACK_IMPORTED_MODULE_6__["cityDisplayValue"])(selectedCity) : ''
       });
-      this.props.onCitySelect(selectedCity);
+      this.props.onCitySelect(selectedCity); // Make the input display the appropriate value
+
       return selectedCity;
     }
   }]);
 
   return CityInput;
-}(react__WEBPACK_IMPORTED_MODULE_1__["Component"]);
+}(react__WEBPACK_IMPORTED_MODULE_3__["Component"]);
 /* harmony default export */ __webpack_exports__["default"] = (CityInput);
+
+/***/ }),
+
+/***/ "./src/components/Search/City/index.scss":
+/*!***********************************************!*\
+  !*** ./src/components/Search/City/index.scss ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js??ref--4-1!../../../../node_modules/postcss-loader/src??ref--4-2!../../../../node_modules/sass-loader/lib/loader.js??ref--4-3!./index.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./src/components/Search/City/index.scss");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
 
 /***/ }),
 
@@ -528,35 +1203,100 @@ function (_Component) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SearchInput", function() { return SearchInput; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _material_react_text_field_index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material/react-text-field/index.scss */ "./node_modules/@material/react-text-field/index.scss");
-/* harmony import */ var _material_react_text_field_index_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_material_react_text_field_index_scss__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _material_react_text_field__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material/react-text-field */ "./node_modules/@material/react-text-field/dist/index.js");
-/* harmony import */ var _material_react_text_field__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_react_text_field__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../utils */ "./src/components/utils.js");
+/* harmony import */ var _material_react_text_field_index_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @material/react-text-field/index.scss */ "./node_modules/@material/react-text-field/index.scss");
+/* harmony import */ var _material_react_text_field_index_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_material_react_text_field_index_scss__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var ramda__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ramda */ "./node_modules/ramda/es/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _material_react_text_field__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material/react-text-field */ "./node_modules/@material/react-text-field/dist/index.js");
+/* harmony import */ var _material_react_text_field__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_react_text_field__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../utils */ "./src/components/utils.js");
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
 
 
 
 
-var handleSearch = function handleSearch(onSearch) {
-  return Object(_utils__WEBPACK_IMPORTED_MODULE_3__["debounce"])(onSearch, 100);
-};
 
-var SearchInput = function SearchInput(_ref) {
-  var onSearch = _ref.onSearch,
-      search = _ref.search;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "text--text"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_text_field__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    label: "Search",
-    helperText: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_text_field__WEBPACK_IMPORTED_MODULE_2__["HelperText"], null, "Enter the name of the Brewery You're Looking For")
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_text_field__WEBPACK_IMPORTED_MODULE_2__["Input"], {
-    value: search,
-    onChange: handleSearch(onSearch)
-  })));
-};
+var SearchInput =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(SearchInput, _Component);
+
+  function SearchInput() {
+    var _getPrototypeOf2;
+
+    var _this;
+
+    _classCallCheck(this, SearchInput);
+
+    for (var _len = arguments.length, props = new Array(_len), _key = 0; _key < _len; _key++) {
+      props[_key] = arguments[_key];
+    }
+
+    _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(SearchInput)).call.apply(_getPrototypeOf2, [this].concat(props)));
+    _this.state = {
+      value: '' // Bind our debounceSearch function here, calling it in
+      // the render method makes it work as a normal function
+
+    };
+    _this.debounceSearch = Object(_utils__WEBPACK_IMPORTED_MODULE_4__["debounce"])(function (q) {
+      return _this.onSearch(q);
+    }, 500);
+    return _this;
+  }
+
+  _createClass(SearchInput, [{
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      // Pass the original arg to setState & call our debounced search function
+      var handleSearch = ramda__WEBPACK_IMPORTED_MODULE_1__["pipe"](ramda__WEBPACK_IMPORTED_MODULE_1__["tap"](function (value) {
+        return _this2.setState({
+          value: value
+        });
+      }), ramda__WEBPACK_IMPORTED_MODULE_1__["tap"](this.debounceSearch));
+      return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+        className: "text--text"
+      }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_react_text_field__WEBPACK_IMPORTED_MODULE_3___default.a, {
+        label: "Search",
+        helperText: react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_react_text_field__WEBPACK_IMPORTED_MODULE_3__["HelperText"], {
+          className: "text--text"
+        }, "Enter the name of the Brewery You're Looking For")
+      }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_material_react_text_field__WEBPACK_IMPORTED_MODULE_3__["Input"], {
+        value: this.state.value,
+        onChange: function onChange(e) {
+          return handleSearch(e.target.value);
+        }
+      })));
+    }
+  }, {
+    key: "onSearch",
+    value: function onSearch(query) {
+      this.props.onSearch(query);
+      return query;
+    }
+  }]);
+
+  return SearchInput;
+}(react__WEBPACK_IMPORTED_MODULE_2__["Component"]);
 /* harmony default export */ __webpack_exports__["default"] = (SearchInput);
 
 /***/ }),
@@ -599,6 +1339,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
+var BREWERY_API = 'https://api.openbrewerydb.org/breweries';
 var SearchComponent =
 /*#__PURE__*/
 function (_Component) {
@@ -618,8 +1359,8 @@ function (_Component) {
     _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(SearchComponent)).call.apply(_getPrototypeOf2, [this].concat(props)));
     _this.state = {
       loading: false,
-      search: _this.props.search,
-      selectedCity: {}
+      selectedCity: {},
+      query: ''
     };
     return _this;
   }
@@ -629,52 +1370,51 @@ function (_Component) {
     value: function render() {
       var _this2 = this;
 
-      var onCitySelect = function onCitySelect(e) {
-        return _this2.onCitySelect(e.target.value);
-      };
-
-      var onSearch = function onSearch(query) {
-        return _this2.onSearch(query);
-      };
-
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_layout_grid__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
         align: "left"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_layout_grid__WEBPACK_IMPORTED_MODULE_1__["Row"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_layout_grid__WEBPACK_IMPORTED_MODULE_1__["Cell"], {
         columns: 3
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Input__WEBPACK_IMPORTED_MODULE_3__["SearchInput"], {
-        onSearch: onSearch
+        onSearch: function onSearch(query) {
+          return _this2.onSearch(query);
+        }
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_react_layout_grid__WEBPACK_IMPORTED_MODULE_1__["Cell"], {
         columns: 3
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_City__WEBPACK_IMPORTED_MODULE_2__["CityInput"], {
-        onCitySelect: onCitySelect
+        onCitySelect: function onCitySelect(selectedCity) {
+          return _this2.onCitySelect(selectedCity);
+        }
       })))));
     }
   }, {
     key: "onCitySelect",
     value: function onCitySelect(selectedCity) {
-      console.log('onCitySelect()');
-      console.log(selectedCity);
       this.setState({
         selectedCity: selectedCity
       });
+      this.props.propagateCitySelection({
+        selectedCity: selectedCity
+      });
+      this.onSearch(this.state.query);
       return selectedCity;
     }
   }, {
     key: "onSearch",
     value: function onSearch(query) {
-      console.log('onSearch()');
-      console.log(query);
-      return query;
-    }
-  }, {
-    key: "handleLoadChange",
-    value: function handleLoadChange(loading) {
-      return this.props.onLoadChange(loading);
-    }
-  }, {
-    key: "handleBreweries",
-    value: function handleBreweries(breweries) {
-      return this.props.onBreweriesLoad(breweries);
+      var _this3 = this;
+
+      if (query.length < 3) {
+        return query;
+      }
+
+      this.setState({
+        query: query
+      });
+      return fetch("".concat(BREWERY_API, "/search?query=").concat(query)).then(function (breweries) {
+        return breweries.json();
+      }).then(function (breweries) {
+        return _this3.state.query === query ? _this3.props.onBreweryLoad(breweries) : breweries;
+      });
     }
   }]);
 
@@ -688,7 +1428,7 @@ function (_Component) {
 /*!*********************************!*\
   !*** ./src/components/utils.js ***!
   \*********************************/
-/*! exports provided: debounce, throttle, titleCase, kabobCase, camelCase */
+/*! exports provided: debounce, throttle, titleCase, kabobCase, camelCase, getOffset */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -698,71 +1438,70 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "titleCase", function() { return titleCase; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "kabobCase", function() { return kabobCase; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "camelCase", function() { return camelCase; });
-function debounce(func, delay) {
-  /**
-    * @source https://medium.com/@_jh3y/throttling-and-debouncing-in-javascript-b01cad5c8edf
-    * @example
-    * const myEl = document.querySelector('div')
-    * myEl.addEventListener('click', throttle(
-    *     ()=> console.log('debounce()'),
-    *     1000
-    * )
-    * myEl.click()
-    * myEl.click()
-    * // 1000ms later
-    * ... 'debounce()'
-    */
-  var inDebounce = undefined;
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getOffset", function() { return getOffset; });
+/**
+ * @func debounce
+ * @source https://medium.com/@_jh3y/throttling-and-debouncing-in-javascript-b01cad5c8edf
+ * @example
+ * const myEl = document.querySelector('div')
+ * myEl.addEventListener('click', throttle(
+ *     ()=> console.log('debounce()'),
+ *     1000
+ * )
+ * myEl.click()
+ * myEl.click()
+ * // 1000ms later
+ * ... 'debounce()'
+ */
+var debounce = function debounce(func, delay) {
+  var inDebounce;
   return function () {
     var context = this;
     var args = arguments;
     clearTimeout(inDebounce);
-    return inDebounce = setTimeout(function () {
+    inDebounce = setTimeout(function () {
       return func.apply(context, args);
     }, delay);
   };
-}
-function throttle(func, limit) {
-  /**
-   * @source Same as debounce function
-   * @example
-   * const myEl = document.querySelector('div')
-   * myEl.addEventListener('click', throttle(
-   *     ()=> console.log('throttle()'),
-   *     1000
-   * )
-   * myEl.click()
-   * ... 'throttle()'
-   * myEl.click()
-   * // 1000ms later
-   * ... 'throttle()'
-   * 
-   */
-  var inThrottle = false;
-  var lastFunc = undefined;
-  var throttleTimer = undefined;
+};
+/**
+ * @func throttle
+ * @source Same as debounce function
+ * @example
+ * const myEl = document.querySelector('div')
+ * myEl.addEventListener('click', throttle(
+ *     ()=> console.log('throttle()'),
+ *     1000
+ * )
+ * myEl.click()
+ * ... 'throttle()'
+ * myEl.click()
+ * // 1000ms later
+ * ... 'throttle()'
+ * 
+ */
+
+var throttle = function throttle(func, limit) {
+  var lastFunc;
+  var lastRan;
   return function () {
     var context = this;
     var args = arguments;
 
-    if (inThrottle) {
-      clearTimeout(lastFunc); // noinspection JSValidateTypes
-
-      return lastFunc = setTimeout(function () {
-        func.apply(context, args);
-        return inThrottle = false;
-      }, limit);
+    if (!lastRan) {
+      func.apply(context, args);
+      lastRan = Date.now();
     } else {
-      func.apply(context, args); // noinspection JSValidateTypes
-
-      inThrottle = true; // noinspection JSValidateTypes
-
-      return throttleTimer = setTimeout(function () {
-        return inThrottle = false;
-      }, limit);
+      clearTimeout(lastFunc);
+      lastFunc = setTimeout(function () {
+        if (Date.now() - lastRan >= limit) {
+          func.apply(context, args);
+          lastRan = Date.now();
+        }
+      }, limit - (Date.now() - lastRan));
     }
   };
-}
+};
 /**
  * @func titleCase
  * @param {String} str
@@ -805,6 +1544,25 @@ var camelCase = function camelCase(str) {
     return $1.toUpperCase().replace('-', '');
   });
 };
+/**
+ * @source: https://stackoverflow.com/a/442474
+ */
+
+function getOffset(el) {
+  var _x = 0;
+  var _y = 0;
+
+  while (el && !isNaN(el.offsetLeft) && !isNaN(el.offsetTop)) {
+    _x += el.offsetLeft - el.scrollLeft;
+    _y += el.offsetTop - el.scrollTop;
+    el = el.offsetParent;
+  }
+
+  return {
+    top: _y,
+    left: _x
+  };
+}
 
 /***/ })
 
